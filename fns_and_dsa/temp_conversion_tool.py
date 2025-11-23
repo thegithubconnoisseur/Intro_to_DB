@@ -11,10 +11,21 @@ def convert_to_fahrenheit(celsius):
 tempis = float(input("Enter the temperature to convert: "))
 scale = input("Is this temperature in Celsius or Fahrenheit? (choose C or F): ")
 
-match scale:
-    case 'C':
-        work_done = convert_to_fahrenheit(tempis)
-        print(f"{tempis}°C is {work_done}°F")
-    case 'F':
-        work_done = convert_to_celsius(tempis)
-        print(f"{tempis}°F is {work_done}°C")
+# match scale:
+#     case 'C':
+#         work_done = convert_to_fahrenheit(tempis)
+#         print(f"{tempis}°C is {work_done}°F")
+#     case 'F':
+#         work_done = convert_to_celsius(tempis)
+#         print(f"{tempis}°F is {work_done}°C")
+#     case _:
+#         raise ValueError("Invalid temperature. Please enter a numeric value.")
+
+if scale == 'C':
+    work_done = convert_to_fahrenheit(tempis)
+    print(f"{tempis}°C is {work_done}°F")
+elif scale == 'F':
+    work_done = convert_to_celsius(tempis)
+    print(f"{tempis}°F is {work_done}°C")
+else:
+    raise ValueError("Invalid temperature. Please enter a numeric value.")
