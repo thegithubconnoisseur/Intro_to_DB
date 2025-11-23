@@ -9,7 +9,7 @@ def convert_to_fahrenheit(celsius):
 
 
 tempis = input("Enter the temperature to convert: ")
-scale = input("Is this temperature in Celsius or Fahrenheit? (choose C or F): ")
+scale = input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
 
 # match scale:
 #     case 'C':
