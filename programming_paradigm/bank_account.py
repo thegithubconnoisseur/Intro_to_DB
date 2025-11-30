@@ -20,10 +20,3 @@ class BankAccount:
         print(f"Current Balance: ${self.account_balance}")
 
 
-
-book = BankAccount(100)
-
-book.deposit(50)
-book.display_balance()
-book.withdraw(20)
-book.display_balance()
