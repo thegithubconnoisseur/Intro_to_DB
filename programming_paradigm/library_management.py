@@ -29,25 +29,25 @@ class Book:
 class Library:
 
     def __init__(self):
-        self._book = []
+        self._books = []
 
     
     def add_book(self,book):
-        self._book.append(book)
+        self._books.append(book)
 
     def check_out_book(self, title):
-        for book in self._book:
+        for book in self._books:
             if book.title == title:
                 book.check_out()
 
     def return_book(self, title):
-        for book in self._book:
+        for book in self._books:
             if book.title == title:
                 book.return_book()
         
 
 
     def list_available_books(self):
-        for values in self._book:
+        for values in self._books:
             if values.is_available():
                 print(f"{values.title} by {values.author}")
