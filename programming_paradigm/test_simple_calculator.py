@@ -18,12 +18,12 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(self.calc.subtract(self.a, self.b), self.a - self.b)
         self.assertEqual(self.calc.subtract(-2,-2), 0)
 
-    def test_multiply(self):
+    def test_multiplication(self):
         self.assertEqual(self.calc.multiply(self.a, self.b), self.a * self.b)
         self.assertEqual(self.calc.multiply(-2,-2), 4)
         self.assertEqual(self.calc.multiply(-2,2), -4)
     
-    def test_divide(self):
+    def test_division(self):
         self.assertEqual(self.calc.divide(self.a, self.b), self.a/self.b)
         self.assertEqual(self.calc.divide(-2,-2), 1)
         self.assertEqual(self.calc.divide(-2,0),None)
