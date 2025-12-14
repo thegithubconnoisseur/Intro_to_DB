@@ -12,6 +12,8 @@ try :
     )
 
     mycursor = mydb.cursor()
+    sql = "CREATE DATABASE IF NOT EXISTS alx_book_store"
+    mycursor.execute(sql)
 
 except Error as e:
     print(f"Error: {e}")
