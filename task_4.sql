@@ -1,7 +1,3 @@
 USE alx_book_store;
 
 SHOW CREATE TABLE Books;
-SHOW CREATE TABLE Authors;
-SHOW CREATE TABLE Customers;
-SHOW CREATE TABLE Orders;
-SHOW CREATE TABLE Order_Details;
